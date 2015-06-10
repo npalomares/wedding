@@ -1,0 +1,482 @@
+/* ==========================================================================
+   Timeline Page
+   ========================================================================== */
+
+.timeline-wrap .begin p,
+.timeline-wrap .end p {
+   display: inline-block;
+   font-size: 20px;
+   color: #fff;
+   background-color: #282e36;
+   padding: 5px 10px;
+   margin-bottom: 0;
+}
+.timeline-wrap .begin {
+  margin-top: 40px;
+}
+
+.timeline-wrap .end {
+  margin-bottom: 40px;
+}
+
+.timeline-wrap .jesta-logo {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: auto;
+  padding-top: 5px;
+}
+
+.timeline-wrap .cd-container {
+ /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+ /*width: 90%;*/
+ max-width: 1170px;
+ margin: 0 auto;
+}
+
+.timeline-wrap .cd-container::after {
+ /* clearfix */
+ content: '';
+ display: table;
+ clear: both;
+}
+
+.timeline-wrap #cd-timelineOne::before {
+ /* this is the vertical line */
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 32px;
+ height: 100%;
+ width: 4px;
+ background: #282e36;
+}   
+.timeline-wrap #cd-timelineOne {
+ position: relative;
+ padding: 32px 0;
+}
+
+.timeline-wrap #cd-timelineOne .cd-timeline-block {
+    position: relative;
+    margin: 32px 0;  
+  }
+.timeline-wrap #cd-timelineOne .cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.timeline-wrap #cd-timelineOne .cd-timeline-block:first-child {
+    margin-top: 0;
+}
+.timeline-wrap #cd-timelineOne .cd-timeline-block:last-child {
+    margin-bottom: 0;
+}     
+
+
+
+.timeline-wrap .cd-timeline-img {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /*background: url(../img/symbol.png) no-repeat center center;
+  background-size: cover;*/
+  background: #282e36;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-wrap .cd-timeline-img img {
+ display: block;
+ width: 24px;
+ height: 24px;
+ position: relative;
+ left: 50%;
+ top: 50%;
+ margin-left: -12px;
+ margin-top: -12px;
+ background: #282e36;
+}
+
+.timeline-wrap .cd-timeline-body {
+  position: relative;
+  margin-left: 70px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 1em;
+  /*box-shadow: 0 3px 0 #1b315e;*/
+}
+/*.timeline-wrap .cd-timeline-body {
+     margin-left: 70px;
+     padding: 26px;
+     width: 45%;
+  }*/
+
+.timeline-wrap .cd-timeline-body h2 {
+ color: #ababab;
+ font-size: 22px;
+ border-bottom: 2px solid #ebebeb;
+ margin-top: 0;
+ padding-bottom: 10px;
+}
+
+.timeline-wrap .cd-timeline-body p {
+  font-size: 16px;
+  margin: 16px 0;
+  line-height: 1.6;
+}
+.timeline-wrap .cd-timeline-body img {
+  width: 100%;
+  height: auto;
+}
+
+.timeline-wrap .cd-timeline-body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.timeline-wrap .cd-timeline-body::before {
+  content: url(../img/right-side.png);
+  position: absolute;
+  top: 16px;
+  right: 100%;
+}
+
+
+@-webkit-keyframes cd-bounce-1 0% {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+}
+
+@-webkit-keyframes cd-bounce-1 60% {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+}
+
+@-webkit-keyframes cd-bounce-1 100% {
+  -webkit-transform: scale(1);
+}
+
+
+@-moz-keyframes cd-bounce-1 0% {
+  opacity: 0;
+  -moz-transform: scale(0.5);
+}
+
+@-moz-keyframes cd-bounce-1 60% {
+  opacity: 1;
+  -moz-transform: scale(1.2);
+}
+
+@-moz-keyframes cd-bounce-1 100% {
+  -moz-transform: scale(1);
+}
+
+
+@keyframes cd-bounce-1 0% {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+@keyframes cd-bounce-1 60% {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@keyframes cd-bounce-1 100% {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+@-webkit-keyframes cd-bounce-2 0% {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+}
+
+@-webkit-keyframes cd-bounce-2 60% {
+  opacity: 1;
+  -webkit-transform: translateX(20px);
+}
+
+@-webkit-keyframes cd-bounce-2 100% {
+  -webkit-transform: translateX(0);
+}
+
+
+@-moz-keyframes cd-bounce-2 0% {
+  opacity: 0;
+  -moz-transform: translateX(-100px);
+}
+
+@-moz-keyframes cd-bounce-2  60% {
+  opacity: 1;
+  -moz-transform: translateX(20px);
+}
+
+@-moz-keyframes cd-bounce-2  100% {
+  -moz-transform: translateX(0);
+}
+
+
+
+@keyframes cd-bounce-2 0% {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  transform: translateX(-100px);
+}
+
+@keyframes cd-bounce-2 60% {
+  opacity: 1;
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+@keyframes cd-bounce-2 100% {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
+
+
+@-webkit-keyframes cd-bounce-2-inverse 0% {
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+}
+
+@-webkit-keyframes cd-bounce-2-inverse 60% {
+  opacity: 1;
+  -webkit-transform: translateX(-20px);
+}
+
+@-webkit-keyframes cd-bounce-2-inverse 100% {
+  -webkit-transform: translateX(0);
+}
+
+
+
+
+@-moz-keyframes cd-bounce-2-inverse 0% {
+  opacity: 0;
+  -moz-transform: translateX(100px);
+}
+
+@-moz-keyframes cd-bounce-2-inverse 60% {
+  opacity: 1;
+  -moz-transform: translateX(-20px);
+}
+
+@-moz-keyframes cd-bounce-2-inverse 100% {
+  -moz-transform: translateX(0);
+}
+
+
+@keyframes cd-bounce-2-inverse 0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+@keyframes cd-bounce-2-inverse 60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+@keyframes cd-bounce-2-inverse 100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@keyframes scrollIn1 0% {
+  opacity:0;transform: translate(0px,30px) scale(.5,.5);
+}
+
+@keyframes scrollIn1 100% { 
+  opacity:1;transform: translate(0px,0px) scale(1,1);
+}
+
+@-webkit-keyframes scrollIn1 0% {
+  opacity:0;-webkit-transform: translate(0px,30px) scale(.5,.5);
+}
+@-webkit-keyframes scrollIn1 100% { 
+  opacity:1;-webkit-transform: translate(0px,0px) scale(1,1);
+}
+
+@-moz-keyframes scrollIn1 0% {
+  opacity:0;-moz-transform: translate(0px,30px) scale(.5,.5); 
+}
+
+@-moz-keyframes scrollIn1 100% { 
+  opacity:1;-moz-transform: translate(0px,0px) scale(1,1); 
+}
+
+@-ms-keyframes scrollIn1 0% { 
+  opacity:0;
+  -ms-transform: translate(0px,30px) scale(.5,.5); 
+}
+
+@-ms-keyframes scrollIn1 100% { 
+  opacity:1;-ms-transform: translate(0px,0px) scale(1,1); 
+}
+
+.scrlIn1 { 
+  -webkit-animation-name: scrollIn1; 
+  -webkit-animation-timing-function: ease-out; 
+  -webkit-animation-duration: 500ms;
+  -moz-animation-name: scrollIn1; 
+  -moz-animation-timing-function: ease-out; 
+  -moz-animation-duration: 500ms;
+  -ms-animation-name: scrollIn1; 
+  ms-animation-timing-function: ease-out; 
+  -ms-animation-duration: 500ms;
+  animation-name: scrollIn1; 
+  animation-timing-function: ease-out; 
+  animation-duration: 500ms; 
+}
+
+
+
+@media (max-width: 767px) {
+  .timeline-wrap .main {
+    padding-top: 40px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  
+  .timeline-wrap .cd-timeline-body {
+     margin-left: 0;
+     padding: 26px;
+     width: 45% !important;
+  } 
+
+
+  .timeline-wrap .begin, 
+  .timeline-wrap .end {
+     text-align: center;
+  }
+  .timeline-wrap #cd-timelineOne::before {
+     left: 50%;
+     margin-left: -2px;
+  }
+  .timeline-wrap .cd-timeline-block:first-child {
+     margin-top: 0 !important;
+  }
+  .timeline-wrap .cd-timeline-block {
+     margin: -180px 0 32px !important;
+  }
+  .timeline-wrap .cd-timeline-img {
+     width: 20px;
+     height: 20px;
+     left: 50%;
+     top: 31px;
+     margin-left: -10px;
+     /* Force Hardware Acceleration in WebKit */
+     -webkit-transform: translateZ(0);
+     -webkit-backface-visibility: hidden;
+  }
+  .timeline-wrap .cd-timeline-body::before {
+     content: url(../img/left-side.png);
+     top: 24px;
+     left: 100%;
+     border-color: transparent;
+     border-left-color: white;         
+  }
+  /*.cd-timeline-content {
+     margin-left: 0;
+     padding: 26px;
+     width: 45%;
+  } */    
+
+
+  .timeline-wrap .cd-timeline-block:nth-child(even) .cd-timeline-body::before {
+     content: url(../img/right-side.png);
+  }
+  .timeline-wrap .cd-timeline-img.is-hidden {
+     visibility: hidden;
+  }
+  .timeline-wrap .cd-timeline-img.bounce-in {
+     visibility: visible;
+     -webkit-animation: cd-bounce-1 0.6s;
+     -moz-animation: cd-bounce-1 0.6s;
+     animation: cd-bounce-1 0.6s;
+  }
+
+  .timeline-wrap .cd-timeline-block:nth-child(even) .cd-timeline-body {
+    float: right;
+  }
+  .timeline-wrap .cd-timeline-block:nth-child(even) .cd-timeline-body::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white;
+  }
+  .timeline-wrap .cd-timeline-body.is-hidden {
+    visibility: hidden;
+  }
+  .timeline-wrap .cd-timeline-body.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+    -moz-animation: cd-bounce-2 0.6s;
+    animation: cd-bounce-2 0.6s;
+  }
+
+  /* inverse bounce effect on even content blocks */
+  .timeline-wrap .cd-timeline-block:nth-child(even) .cd-timeline-body.bounce-in {
+      -webkit-animation: cd-bounce-2-inverse 0.6s;
+      -moz-animation: cd-bounce-2-inverse 0.6s;
+      animation: cd-bounce-2-inverse 0.6s;
+   } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

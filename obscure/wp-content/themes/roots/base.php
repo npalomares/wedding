@@ -32,8 +32,8 @@
         <h2 class="banner text-center"><?php the_title(); ?></h2>
       </div>
     </div>
-
-    <?php } ?>
+  </div>
+  <?php } ?>
 
 
 

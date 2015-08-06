@@ -29,7 +29,7 @@
 
     <div class="interior-banner-wrap">
       <div class="interior-banner container">
-        <h2 class="banner text-center"><?php the_title(); ?></h2>
+        <h2 class="banner text-center"><?php the_title(); ?>helloo</h2>
       </div>
     </div>
 

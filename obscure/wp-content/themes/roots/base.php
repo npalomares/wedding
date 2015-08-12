@@ -21,7 +21,9 @@
   <?php if( is_front_page() ) { ?>
     <div class="slideshow-wrap">
       <div class="slideshow container">
-        <?php echo do_shortcode('[gm_slideshow]'); ?>
+        <div class="row">
+          <h1 class="site-title text-center">Jamie and Nicholas 2015</h1>
+        </div>
       </div>
     </div>
     
@@ -29,7 +31,9 @@
 
     <div class="interior-banner-wrap">
       <div class="interior-banner container">
-        <h2 class="banner text-center"><?php the_title(); ?></h2>
+        <div class="row">
+          <h2 class="banner text-center"><?php the_title(); ?></h2>
+        </div>
       </div>
     </div>
   </div>

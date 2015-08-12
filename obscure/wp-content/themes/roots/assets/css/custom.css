@@ -6,12 +6,10 @@
 html, body {
 	height: 100%;
 }
-/*body { 
-	background: url(../images/jamieandnick.jpg) no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-}*/
+body { 
+	font-size: 16px !important;
+	line-height: 32px;
+}
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -26,7 +24,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-header { }
+header a { 
+	color: #FFF !important;
+}
 
 /*Home page and Interior page banners*/
 .slideshow-wrap {
@@ -45,7 +45,8 @@ header { }
 	color: #FFF;
 	height: 400px;
 }*/
-h1.site-title {
+h1.site-title,
+h3.sub-title {
 	color: #FFF;
 }
 
@@ -59,7 +60,7 @@ h2.banner {
 .wrap { 
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background-color: #e7e7e7;
+	/*background-color: #e7e7e7;*/
 	height: 100%;
 }
 
@@ -86,7 +87,18 @@ aside { }
 
 
 
-/*Page Specific*/
+/*Tab Specific*/
+ul.list-of-hotels {
+	list-style-type: none;
+}
+ul.list-of-hotels address {
+	margin-bottom: 5px;
+}
+ul.list-of-hotels address p {
+	margin-bottom: 0;
+}
+
+
 
 
 /*About Us Page*/

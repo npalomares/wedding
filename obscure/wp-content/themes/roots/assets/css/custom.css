@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+a {
+	color: #f08ff7;
+	text-transform: uppercase;
+}
 .banner {
 	background-color: #000;
 	border: none;
@@ -32,7 +36,7 @@ header a {
 .slideshow-wrap {
 	padding-top: 30px;
     padding-bottom: 30px;
-	background: url(../images/jamieandnick.jpg) no-repeat;
+	background: url(../images/wedding_bg.png) no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -58,8 +62,8 @@ h2.banner {
 }
 
 .wrap { 
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	/*background-color: #e7e7e7;*/
 	height: 100%;
 }
@@ -67,6 +71,12 @@ h2.banner {
 
 /*Global Main Styles*/
 .main { }
+
+.main .tab-pane {
+	padding: 50px;
+	text-align: center;
+}
+
 .page-header {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -97,13 +107,22 @@ ul.list-of-hotels address {
 ul.list-of-hotels address p {
 	margin-bottom: 0;
 }
-
+#accommodations .left {
+	text-align: left !important;
+}
 
 
 
 /*About Us Page*/
 body.about .left {
 	padding-left: 0;
+}
+
+
+/* 404 Page -- why?? */
+body.error404 .lost-return-list {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 

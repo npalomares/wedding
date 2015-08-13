@@ -1,13 +1,18 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
 <div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
+  <?php _e("Hello my good people! You've wandered off the beaten path", 'roots'); ?>
 </div>
-
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
+<a href="<?php echo home_url(); ?>" class="btn btn-primary btn-large">Back to Home</a>
+<div class="lost-return-list">
+	<div class="row">
+		  <!-- Nav tabs -->
+	  <ul class="nav nav-pills" role="tablist">
+	    <li role="presentation" class="active"><a href="<?php bloginfo('home') ;?>/#info" aria-controls="info" role="tab" data-toggle="tab">Information</a></li>
+	    <li role="presentation"><a href="<?php bloginfo('home') ;?>/#accommodations" aria-controls="accommodations" role="tab" data-toggle="tab">Accommodations</a></li>
+	    <li role="presentation"><a href="<?php bloginfo('home') ;?>/#registry" aria-controls="registry" role="tab" data-toggle="tab">Registry</a></li>
+	  </ul>
+	</div>
+</div>
 
 <?php get_search_form(); ?>

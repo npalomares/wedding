@@ -22,7 +22,10 @@
     <div class="slideshow-wrap">
       <div class="slideshow container">
         <div class="row">
-          <h1 class="site-title text-center">Jamie and Nicholas 2015</h1>
+          <header>
+            <h1 class="site-title text-center">Jamie and Nicholas</h1>
+            <h3 class="sub-title text-center">October 16th, 2015</h3>
+          </header>
         </div>
       </div>
     </div>

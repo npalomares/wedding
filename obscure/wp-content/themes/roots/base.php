@@ -17,8 +17,6 @@
     }
   ?>
   
-  <div class="hero-wrap">
-  <?php if( is_front_page() ) { ?>
     <div class="slideshow-wrap">
       <div class="slideshow container">
         <div class="row">
@@ -30,18 +28,6 @@
       </div>
     </div>
     
-    <?php } else { ?>
-
-    <div class="interior-banner-wrap">
-      <div class="interior-banner container">
-        <div class="row">
-          <h2 class="banner text-center"><?php the_title(); ?></h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <?php } ?>
 
   <div class="main-wrap">
     <div class="wrap container" role="document">

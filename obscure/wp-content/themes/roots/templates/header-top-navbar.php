@@ -10,12 +10,15 @@
       <a class="navbar-brand" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a>
     </div>
 
-<!--     <nav class="collapse navbar-collapse" role="navigation">
+    <nav class="collapse navbar-collapse" role="navigation">
       <?php
-        //if (has_nav_menu('primary_navigation')) :
-          //wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-        //endif;
+        if (has_nav_menu('primary_navigation')) :
+          wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav navbar-right'));
+        endif;
       ?>
-    </nav> -->
+    </nav>
+<!--     <div class="contact pull-right">
+      <a href="mailto:nicholaspalomares@gmail.com">Email Us</a>
+    </div> -->
   </div>
 </header>
